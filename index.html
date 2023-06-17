@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>pop up project</title>
+</head>
+<body>
+<h1>Titulo</h1>
+<button id="titulo">Mudar Titulo</button>
+<p class="subtitulo">subtítulo</p>
+<br/>
+<p id="descricao">Uma lista de itens</p>
+<br/>
+<ul>
+<li>Seus itens</li>
+<ol>
+<li class="itens">Livro</li>
+<li class="itens">Caneta</li>
+<li class="itens">Telefone</li>
+<li class="itens">Carteira</li>
+</ol>
+<li>Outros Itens</li>
+<ol>
+<li>N/A</li>
+</ol>
+</ul>
+
+<script>
+let meuBotao = document.getElementById('titulo');
+function defineNomeUsuario() {
+  let meuNome = prompt('Por favor, digite seu nome.');
+  localStorage.setItem('nome', meuNome);
+  meuCabecalho.textContent = 'Mozilla é legal, ' + meuNome;
+}
+</script>
+</body>
+</html>
